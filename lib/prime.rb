@@ -12,7 +12,6 @@ class Prime
 private
 
     def is_prime?(n)
-        result = false
         if n <= 1
             return false
         else
@@ -20,5 +19,7 @@ private
                 return false if n % i == 0
             }
         end
+
+        return true
     end
 end
