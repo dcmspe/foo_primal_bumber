@@ -10,4 +10,22 @@ describe Prime do
             end
         end
     end
+
+    describe ".is_prime?" do
+        context "given 13" do
+            it "it should tell if 13 is prime" do
+                prime = Prime.new
+                result = prime.is_prime?(13)
+                result.should eq(true)
+            end
+        end
+
+        context "given 101" do
+            it "it should tell if 101 is prime" do
+                prime = Prime.new
+                result = prime.is_prime?(101)
+                result.should eq(true)
+            end
+        end
+    end
 end
